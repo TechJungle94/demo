@@ -20,7 +20,7 @@ public class UserController {
         u.setName("yjiao47");
         u.setPassword("jiaoyi1994");
         u.setBirthday(new Date());
-        u.setAge(18);
+        u.setAge(20);
         return u;
     }
 
