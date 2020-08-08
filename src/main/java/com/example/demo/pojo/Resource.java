@@ -6,6 +6,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ConfigurationProperties(prefix="com.example.demo.openresource")
+// classpath用来指代src/main/java/
 @PropertySource(value="classpath:resource.properties")
 public class Resource {
     private String name;
