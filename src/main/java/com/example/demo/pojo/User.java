@@ -17,7 +17,7 @@ public class User {
     private Date birthday;
     //值是non-null才会显示
     @JsonInclude(Include.NON_NULL)
-    private String description;
+    private String desc;
 
     public void setName(String name) {
         this.name = name;
@@ -35,6 +35,10 @@ public class User {
         this.birthday = birthday;
     }
 
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
     public String getName() {
         return name;
     }
@@ -49,5 +53,9 @@ public class User {
 
     public Date getBirthday() {
         return birthday;
+    }
+
+    public String getDesc() {
+        return desc;
     }
 }
